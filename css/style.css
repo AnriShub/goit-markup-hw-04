@@ -118,7 +118,7 @@ img {
    */
 
 
-.contacts:hover, .contacts:hover path, 
+.contacts:hover, .contacts:hover path, .contacts:hover a,
 .contacts:focus {
     color: var(--maincolor);
     fill: var(--maincolor);
