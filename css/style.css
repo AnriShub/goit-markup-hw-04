@@ -180,7 +180,7 @@ a:focus, a:hover {
 }
 
 .cover-section {
-    background-image: url(/images/header-overlay.png), url(/images/header.jpg);
+    background-image: url(../images/header-overlay.png), url(../images/header.jpg);
     background-repeat: no-repeat;
     /* background-size: 1600px, cover; */
     /* background-position: center; */
