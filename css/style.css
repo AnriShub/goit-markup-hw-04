@@ -16,6 +16,7 @@
     --bg-color-fon: #2F303A;
     --box-shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --social-round-color: rgba(255, 255, 255, 0.1);
+    --social-icon-color: #AFB1B8;
   }    
 
   h1, h2, h3, h4, h5, h6, p {
@@ -98,7 +99,7 @@ img {
 } */
 
 .icon-env {
-    margin-top: 2px;
+    /* margin-top: 2px; */
     display: block;
     margin-right: 10px;
     /* margin-bottom: -3px; */
@@ -107,7 +108,7 @@ img {
 .icon-tel {
     /* margin-top: -2px; */
     display: block;
-    margin-right: 10px;
+    margin-right: 5px;
     /* margin-bottom: -3px; */
 }
 
@@ -118,11 +119,20 @@ img {
    */
 
 
-.contacts:hover, .contacts:hover path, .contacts:hover a,
+.contacts:hover, .contacts:hover .contacts-icon, .contacts:hover a,
 .contacts:focus {
     color: var(--maincolor);
     fill: var(--maincolor);
 }
+
+
+
+.contacts-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondarycolor);
+}
+
 
 .nav_color {
     color: var(--maincolor);
@@ -184,10 +194,10 @@ a:focus, a:hover {
     background-repeat: no-repeat;
     /* background-size: 1600px, cover; */
     /* background-position: center; */
-    /* width: 1600px; */
+    width: 1600px;
     background-position: 50% 50%;
     /* background: rgba(47, 48, 58, 0.4); */
-    /* margin: 0 auto; */
+    margin: 0 auto;
 
     /* background-size: 1600px 50%; */
     /* background-attachment:fixed; */
@@ -215,8 +225,11 @@ padding-top: 0;
 }
 
 .details-icons-rect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
-    padding: 25px 102px;
+    /* padding: 25px 102px; */
     width: 270px;
     height: 120px;
     background:var(--button-color);
@@ -224,10 +237,18 @@ padding-top: 0;
 }
 
 
+
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+
+.details-benefits-icon {
+    max-height: 70px;
+
 }
 
 
@@ -328,7 +349,9 @@ ul {
 
 .teams-item-social{
     display: flex;
-    padding-left: 32px;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* padding-left: 32px; */
 }
 
 .teams-item-social-round {
@@ -339,25 +362,36 @@ ul {
     border-radius: 100%;
     width: 44px;
     height: 44px;
-    margin-bottom: 30px;
     margin-right: 10px;
     background-color:var(--bgcolor);
     /* fill: red;  */
 }
-.teams-item-social-round path {
-    fill:#AFB1B8;
-}
+/* .teams-item-social-round path {
+    fill: var(--social-icon-color);
+} */
 
+
+.teams-social-icon {
+fill: mediumvioletred;
+
+}
 .teams-item-social-round:hover, 
-.teams-item-social-round:hover path {
+.teams-item-social-round:hover .teams-social-icon {
     background-color:var(--maincolor);
-    fill: white; 
+    fill: var(--bgcolor);
 }
 
 
 .teams-item-social-round:last-child{
     margin-right:0
 }
+
+.teams-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-icon-color);
+}
+
 
 .card-buttons {
     justify-content: center;
@@ -527,16 +561,28 @@ ul {
     /* padding: auto; */
     /* padding-left: auto;
     padding-right: auto; */
-
+    
     /* left: 615px;
     top: 2490px; */
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--social-icon-color);
     border-radius: 4px;
 }
 
-.regular-customers:hover, 
-.regular-customers:hover path {
+.regular-customers:hover {
     fill: var(--maincolor); 
+    border: 1px solid var(--maincolor);
+}
+
+.regular-customers:hover .regular-customers-icon {
+    border: none;
+    fill: var(--maincolor); 
+}
+
+
+.regular-customers-icon {
+    fill: var(--social-icon-color);
+    max-height: 47px;
+    max-width: 94px;
 }
 
 /* ============ FOOTER ============= */
@@ -562,6 +608,18 @@ ul {
     margin-right: 70px;
 }
 
+.social-title {
+    text-transform: uppercase;
+    color: var(--bgcolor);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-top: 11px;
+}
+
+
 .footer-social{
     display: flex;
 
@@ -575,21 +633,30 @@ ul {
         border-radius: 100%;
         width: 44px;
         height: 44px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         margin-right: 10px;
         background-color:var(--social-round-color);
         /* fill: red;  */
 }
 
+
 .footer-social-round path {
     fill:#AFB1B8;
 }
+
 
 .footer-social-round:hover, 
 .footer-social-round:hover path {
     background-color:var(--maincolor);
     fill: white; 
 }    
+
+
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--bgcolor);
+}
 
 address {
     margin-top: 20px;
