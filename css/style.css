@@ -293,14 +293,17 @@ ul {
 }
 
 
-.border-shadow {
+/* .border-shadow {
     border-left: 1px solid var(--box-border-color);
     border-bottom: 1px solid var(--box-border-color);
     border-right: 1px solid var(--box-border-color);;
-}
+} */
 
 .flex-elements-padding {
     padding: 20px 24px 20px 24px;
+    border-left: 1px solid var(--box-border-color);
+    border-bottom: 1px solid var(--box-border-color);
+    border-right: 1px solid var(--box-border-color);;
 }
 
 .example-work {
